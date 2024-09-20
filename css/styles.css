@@ -158,7 +158,7 @@
   }
   
   .icons {
-    width: 40px;
+    width: 80px;
     transition: transform 0.3s ease-in-out; 
     cursor: pointer; 
   }
@@ -532,10 +532,30 @@
 }
 
 @media (max-width: 768px) {
+  nav{
+    font-size: 15px;
+    h1{
+      font-size: 16px;
+    }
+  }
   .about-container {
     flex-direction: column; 
-    text-align: center; 
+    justify-content: center;
+    display: flex;
   }
+  #around {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px; 
+    justify-items: center; 
+  }
+
+  .box {
+    width: 100%; 
+    height: 200px;
+  }
+
+
   #intro{
    font-size: 80%;
   }
@@ -548,10 +568,31 @@
   .about-text {
     text-align: center; 
   }
+  .icons {
+    width: 60px;}
+
 }
 
-@media (max-width: 768px) {
-  #intro{
-    font-size: 60%;
-   }
+@media (max-width: 480px) {
+
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+nav{
+  font-size: 10px;
+}
+
+#intro{
+  font-size: 7px;
+}
+
+#around {
+display: flex;
+justify-content: left;
+width: 290px;
+}
+
+
 }
